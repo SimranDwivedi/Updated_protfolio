@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simran Dwivedi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1e1e2f;
+      color: #fff;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 260px;
+      background: #27293d;
+      padding: 20px;
+      height: 100vh; 
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .sidebar h2,
+    .sidebar p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .skills, .languages {
+      margin-top: 30px;
+    }
+
+    .bar {
+      border-radius:30%;
+      height: 5px;
+      /* width: 100px; */
+      background: #555;
+      
+      overflow: hidden;
+    }
+    
+    .fill {
+      height: 100%;
+      background: yellow;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    /* Navbar Styles */
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f1c40f; /* yellow hover */
+}
+
+    .intro{
+        background-image: url('th.jpg');
+        height: 230px;
+        width: 170vh;
+    }
+    .intro h1 {
+      
+      font-size: 36px;
+      width: 80vh;
+      
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .btn1{
+        margin: 35px 0px;
+    }
+    .btn {
+      background: yellow;
+      color: black;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .stats {
+      display: flex;
+      margin-top: 40px;
+      gap: 50px;
+    }
+
+    .stat-box {
+      text-align: center;
+      margin-right:20vh;
+    }
+
+    .services {
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background: #2e3047;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+    <img src="pic.jpg" alt="Profile Pic" class="profile-pic" />
+    <h2>Simran Dwivedi</h2>
+    <p>Software Developer | Flask | ML Enthusiast</p>
+    </div>
+    <div class="languages">
+      <h3>Languages</h3>
+      <p>English - 90%</p>
+      <div class="bar"><div class="fill" style="width: 90%"></div></div>
+    </div>
+
+    <div class="skills">
+      <h3>Skills</h3>
+      <p>HTML,CSS</p>
+      <div class="bar"><div class="fill" style="width: 95%"></div></div>
+      <p>JavaScript</p>
+      <div class="bar"><div class="fill" style="width: 85%"></div></div>
+      <p>React js,Python</p>
+      <div class="bar"><div class="fill" style="width: 80%"></div></div>
+      
+      <p>Flask</p>
+      <div class="bar"><div class="fill" style="width: 70%"></div></div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="nav_bar">
+        <nav class="navbar">
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="https://www.linkedin.com/in/simrandwivedi/">About</a></li>
+              <li><a href="https://github.com/SimranDwivedi">Projects</a></li>
+              <li><a href="contack.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+    </div>
+    <div class="intro" id="home">
+      
+      <h1>Hii.. I Am Simran Dwivedi</h1>
+      <p><code>&lt;code&gt;</code> I develop website and Software<code>&lt;/code&gt;</code></p>
+      <div class="btn1"><a href="https://www.linkedin.com/in/simrandwivedi/" class="btn">Explore Now</a></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h2>6</h2>
+        <p>Months Experience</p>
+      </div>
+      <div class="stat-box">
+        <h2>5+</h2>
+        <p>Completed Projects</p>
+      </div>
+      <div class="stat-box">
+        <h2>3+</h2>
+        <p>Happy Clients</p>
+      </div>
+    </div>
+
+    <div class="services">
+      <h2>My Services</h2>
+      <div class="service-card">
+        <h3>API Development</h3>
+        <p>Built secure login/signup, content APIs and integrated services with Google Maps.</p>
+      </div>
+      <div class="service-card">
+        <h3>Algorithm Design</h3>
+        <p>Designed and implemented the 2D Bin Packing algorithm for optimal resource utilization.</p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
